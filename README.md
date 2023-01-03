@@ -4,7 +4,7 @@ This is a template for [Yew](https://github.com/yewstack/yew) apps that are buil
 
 ## Usage
 
-For a more thorough explanation of Trunk and its features, please head over to the [repository][trunk].
+For a more thorough explanation of Trunk and its features, please head over to the [repository](https://github.com/thedodd/trunk).
 
 ### Installation
 
