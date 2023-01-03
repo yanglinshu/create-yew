@@ -1,6 +1,6 @@
-# Yew Trunk Template
+# Create Yew
 
-This is a fairly minimal template for a Yew app that's built with [Trunk].
+This is a template for [Yew](https://github.com/yewstack/yew) apps that are built with [Trunk](https://github.com/thedodd/trunk). It is migrated from [create-yew-app](https://github.com/jetli/create-yew-app), a parcel-based yew template which is buggy in Windows.
 
 ## Usage
 
@@ -25,7 +25,13 @@ Simply run the following command to install it:
 cargo install trunk wasm-bindgen-cli
 ```
 
-That's it, we're done!
+### Generating
+
+You can use [cargo-generate](https://github.com/cargo-generate/cargo-generate) to generate this template.
+
+```bash
+cargo generate --git https://github.com/yanglinshu/create-yew
+```
 
 ### Running
 
@@ -69,6 +75,3 @@ Finally, you should update this very `README` file to be about your app.
 The template ships with both the Apache and MIT license.
 If you don't want to have your app dual licensed, just remove one (or both) of the files and update the `license` field in `Cargo.toml`.
 
-There are two empty spaces in the MIT license you need to fill out: `` and `yanglinshu <nicolasvandarkholme@outlook.com>`.
-
-[trunk]: https://github.com/thedodd/trunk
