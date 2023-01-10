@@ -7,6 +7,11 @@ type = "bool"
 prompt = "Add Stylist for CSS Parsing?"
 default = false
 
+[placeholders.use_yew_router]
+type = "bool"
+prompt = "Add Yew Router for Single Page Application Development?"
+default = false
+
 [placeholders.use_lazy_static]
 type = "bool"
 prompt = "Add Lazy Static for Lazy Statics?"
@@ -26,3 +31,6 @@ default = false
 type = "bool"
 prompt = "Add WASM Bindgen Test for Unit Testing?"
 default = false
+
+[conditional.'!use_yew_router']
+ignore = ["src/views/about.rs", "src/components/nav.rs"]

@@ -13,25 +13,27 @@ categories = ["gui", "wasm", "web-programming"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 log = "0.4"
-{% if use_serde %}
-serde = { version = "1.0", features = ["derive"] }
-{% endif %}
-{% if use_reqwest %}
-reqwest = { version = "0.11.13", features = ["json"] }
-{% endif %}
 yew = { version = "0.20.0", features = ["csr"] }
-yew-router = "0.17.0"
 yew-hooks = "0.2.0"
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4"
 wasm-logger = "0.2.0"
-{% if use_lazy_static %}
-lazy_static = "1.4.0"
-{% endif %}
+gloo = "0.8.0"
 {% if use_stylist %}
 stylist = { version = "0.11.0", features = ["yew_integration"]}
 {% endif %}
-gloo = "0.8.0"
+{% if use_yew_router %}
+yew-router = "0.17.0"
+{% endif %}
+{% if use_lazy_static %}
+lazy_static = "1.4.0"
+{% endif %}
+{% if use_reqwest %}
+reqwest = { version = "0.11.13", features = ["json"] }
+{% endif %}
+{% if use_serde %}
+serde = { version = "1.0", features = ["derive"] }
+{% endif %}
 
 [dependencies.web-sys]
 version = "0.3.4"

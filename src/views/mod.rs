@@ -1,12 +1,19 @@
 use yew::prelude::*;
+
+{% if use_yew_router %}
 use yew_router::prelude::*;
 
 pub mod about;
+{% endif %}
 pub mod home;
 
+{% if use_yew_router %}
 use about::About;
+{% endif %}
+
 use home::Home;
 
+{% if use_yew_router %}
 /// App routes
 #[derive(Routable, Debug, Clone, PartialEq, Eq)]
 pub enum AppRoute {
@@ -27,3 +34,4 @@ pub fn switch(routes: AppRoute) -> Html {
         AppRoute::PageNotFound => html! { "Page not found" },
     }
 }
+{% endif %}
