@@ -1,6 +1,6 @@
 # Create Yew
 
-This is a template for [Yew](https://github.com/yewstack/yew) apps that are built with [Trunk](https://github.com/thedodd/trunk). It is migrated from [create-yew-app](https://github.com/jetli/create-yew-app), a parcel-based yew template which is buggy in Windows.
+This is a template for [Yew](https://github.com/yewstack/yew) apps that are built with [Trunk](https://github.com/thedodd/trunk). It is migrated from [create-yew-app](https://github.com/jetli/create-yew-app), a parcel-based yew template which fails to watch rust source files on certain platforms.
 
 ## Usage
 

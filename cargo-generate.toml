@@ -1,0 +1,24 @@
+[placeholders.use_stylist]
+type = "bool"
+prompt = "Add Stylist for CSS Parsing?"
+default = false
+
+[placeholders.use_lazy_static]
+type = "bool"
+prompt = "Add Lazy Static for Lazy Statics?"
+default = false
+
+[placeholders.use_reqwest]
+type = "bool"
+prompt = "Add Reqwest for Network Requests?"
+default = false
+
+[placeholders.use_serde]
+type = "bool"
+prompt = "Add Serde for Serialization?"
+default = false
+
+[placeholders.use_wasm_bindgen_test]
+type = "bool"
+prompt = "Add WASM Bindgen Test for Unit Testing?"
+default = false
