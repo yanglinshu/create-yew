@@ -1,4 +1,4 @@
-{% if use_serde && use_reqwest %}
+{% if use_serde and use_reqwest %}
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 {% endif %}
 use yew::prelude::*;
@@ -7,7 +7,7 @@ use yew_hooks::prelude::*;
 /// About page
 #[function_component(About)]
 pub fn about() -> Html {
-    {% if use_serde && use_reqwest %}
+    {% if use_serde and use_reqwest %}
     let state =
         use_async(async move { 
             fetch_repo(("yanglinshu/create-yew".to_string()).clone()).await             
@@ -35,7 +35,7 @@ pub fn about() -> Html {
                     </a>
                     { ", Set up a modern yew web app by running one command." }
                 </p>
-                {% if use_serde && use_reqwest %}
+                {% if use_serde and use_reqwest %}
                 <p>
                     <button {onclick}>{ "Load info of this repo" }</button>
                 </p>
@@ -82,7 +82,7 @@ pub fn about() -> Html {
     }
 }
 
-{% if use_serde && use_reqwest %}
+{% if use_serde and use_reqwest %}
 async fn fetch_repo(repo: String) -> Result<Repo, Error> {
     fetch::<Repo>(format!("https://api.github.com/repos/{}", repo)).await
 }
