@@ -74,7 +74,7 @@ pub fn about() -> Html {
                     }
                 </p>
                 <p>
-                    { "Edit " } <code>{ "src/components/about.rs" }</code> { " and save to reload." }
+                    { "Edit " } <code>{ "src/views/about.rs" }</code> { " and save to reload." }
                 </p>
                 {% endif %}
             </header>

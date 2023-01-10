@@ -8,7 +8,7 @@ use yew_router::prelude::*;
 use crate::components::nav::Nav;
 use crate::views::{switch, AppRoute};
 {% else %}
-use crate::components::home::Home;
+use crate::views::home::Home;
 {% endif %}
 
 /// Root app component

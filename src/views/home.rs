@@ -26,7 +26,7 @@ pub fn home() -> Html {
                 >
                 </a>
                 <p>
-                    { "Edit " } <code>{ "src/routes/home.rs" }</code> { " and save to reload." }
+                    { "Edit " } <code>{ "src/views/home.rs" }</code> { " and save to reload." }
                 </p>
                 <a
                     id="learn_yew"
