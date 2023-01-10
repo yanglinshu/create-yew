@@ -1,14 +1,9 @@
 use yew::prelude::*;
-
-{% if use_yew_router %}
-use yew_router::prelude::*;
-{% endif %}
-
+{% if use_yew_router %}use yew_router::prelude::*;{% endif %}
 {% if use_yew_router %}
 use crate::components::nav::Nav;
 use crate::views::{switch, AppRoute};
-{% else %}
-use crate::views::home::Home;
+{% else %}use crate::views::home::Home;
 {% endif %}
 
 /// Root app component
@@ -20,8 +15,6 @@ pub fn app() -> Html {
             <Nav />
             <Switch<AppRoute> render={switch} />
         </BrowserRouter>
-        {% else %}
-        <Home />
-        {% endif %}
+        {% else %}<Home />{% endif %}
     }
 }

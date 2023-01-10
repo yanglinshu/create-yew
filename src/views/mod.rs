@@ -1,16 +1,11 @@
 {% if use_yew_router %}
 use yew_router::prelude::*;
-
+use yew::prelude::*;
+use about::About;
+use home::Home;
 pub mod about;
 {% endif %}
 pub mod home;
-
-{% if use_yew_router %}
-use yew::prelude::*;
-
-use about::About;
-use home::Home;
-{% endif %}
 
 {% if use_yew_router %}
 /// App routes

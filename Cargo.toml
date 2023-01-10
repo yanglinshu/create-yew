@@ -19,21 +19,11 @@ wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4"
 wasm-logger = "0.2.0"
 gloo = "0.8.0"
-{% if use_stylist %}
-stylist = { version = "0.11.0", features = ["yew_integration"]}
-{% endif %}
-{% if use_yew_router %}
-yew-router = "0.17.0"
-{% endif %}
-{% if use_lazy_static %}
-lazy_static = "1.4.0"
-{% endif %}
-{% if use_reqwest %}
-reqwest = { version = "0.11.13", features = ["json"] }
-{% endif %}
-{% if use_serde %}
-serde = { version = "1.0", features = ["derive"] }
-{% endif %}
+{% if use_stylist %}stylist = { version = "0.11.0", features = ["yew_integration"]}{% endif %}
+{% if use_yew_router %}yew-router = "0.17.0"{% endif %}
+{% if use_lazy_static %}lazy_static = "1.4.0"{% endif %}
+{% if use_reqwest %}reqwest = { version = "0.11.13", features = ["json"] }{% endif %}
+{% if use_serde %}serde = { version = "1.0", features = ["derive"] }{% endif %}
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -46,7 +36,5 @@ features = [
 ]
 
 [dev-dependencies]
-{% if use_wasm_bindgen_test %}
-wasm-bindgen-test = "0.3"
-{% endif %}
+{% if use_wasm_bindgen_test %}wasm-bindgen-test = "0.3"{% endif %}
 trunk = "0.16.0"

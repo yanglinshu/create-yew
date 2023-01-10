@@ -1,3 +1,1 @@
-{% if use_yew_router %}
-pub mod nav;
-{% endif %}
+{% if use_yew_router %}pub mod nav;{% endif %}
