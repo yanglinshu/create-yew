@@ -19,7 +19,7 @@ pub fn about() -> Html {
             state.run();
         })
     };
-    {% else %}
+    {% endif %}
 
     html! {
         <div class="app">
