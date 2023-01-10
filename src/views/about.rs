@@ -1,8 +1,8 @@
 {% if use_serde and use_reqwest %}
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
+use yew_hooks::prelude::*;
 {% endif %}
 use yew::prelude::*;
-use yew_hooks::prelude::*;
 
 /// About page
 #[function_component(About)]
