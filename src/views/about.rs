@@ -121,6 +121,7 @@ enum Error {
 }
 {% endif %}
 
+{% if use_wasm_bindgen_test %}
 #[cfg(test)]
 mod tests {
     use wasm_bindgen_test::*;
@@ -142,3 +143,4 @@ mod tests {
         assert_eq!(link, "Create Yew");
     }
 }
+{% endif %}
